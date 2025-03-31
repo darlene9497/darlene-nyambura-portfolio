@@ -362,6 +362,40 @@ header {
     transform: translateY(-2px);
 }
 
+/* tech stack stylings */
+.tech-stack-section {
+    text-align: center;
+    margin: 0;
+}
+
+.tech-title {
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.tech-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    padding: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+}
+
+.tech-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s, filter 0.3s;
+    filter: grayscale(100%);
+}
+
+.tech-icon:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
 /* ==== MOBILE RESPONSIVENESS ==== */
 @media screen and (max-width: 768px) {
     h1, h2 {
