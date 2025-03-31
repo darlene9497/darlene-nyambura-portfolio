@@ -396,6 +396,13 @@ header {
     filter: grayscale(0%);
 }
 
+.swipe-hint {
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    display: none;
+}
+
 /* ==== MOBILE RESPONSIVENESS ==== */
 @media screen and (max-width: 768px) {
     h1, h2 {
@@ -478,6 +485,21 @@ header {
     .project-content {
         gap: 40px;
     }
+
+    /* tech stack */
+    .tech-icons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .tech-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .swipe-hint {
+        display: block;
+    }
 }
 
 /* ==== TABLET RESPONSIVENESS ==== */
@@ -533,5 +555,15 @@ header {
         bottom: 10px;
         right: 50%;
         transform: translateX(50%);
+    }
+
+    /* tech stack */
+    .tech-icons {
+        display: flex;
+        gap: 40px;
+    }
+
+    .swipe-hint {
+        display: block;
     }
 }
