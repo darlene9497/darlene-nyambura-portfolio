@@ -26,6 +26,7 @@ p {
     font-size: 13px;
     line-height: 2.2;
 }
+
 /* navbar stylings */
 header {
     position: fixed;
@@ -90,4 +91,111 @@ header {
 .download-btn:hover {
     color: var(--text-primary-color);
     background-color: var(--primary-color);
+}
+
+/* hide mobile menu by default */
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 200px;
+    height: 55%;
+    background: var(--primary-color);
+    box-shadow: -4px 0 10px var(--light-box-shadow);
+    transition: right 0.3s ease-in-out;
+    margin-top: 70px;
+    z-index: 1;
+}
+
+#mobile-menu a:not(.close-btn, .download-btn) {
+    color: var(--text-primary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: block;
+    justify-content: center;
+    padding: 35px 0;
+}
+
+#mobile-menu .download-btn {
+    width: fit-content;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#mobile-menu .download-btn:hover {
+    color: var(--primary-color);
+}
+
+#mobile-menu a:hover {
+    font-weight: bold;
+}
+/* show mobile menu when clicked */
+#mobile-menu:target {
+    right: 0;
+}
+
+.close-btn {
+    font-size: 25px;
+    color: var(--text-primary-color);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.mobile-nav {
+    list-style: none;
+    width: fit-content;
+}
+
+.menu-icon {
+    font-size: 24px;
+    color: var(--text-primary-color);
+    text-decoration: none;
+    display: none;
+}
+
+/* ==== MOBILE RESPONSIVENESS ==== */
+@media screen and (max-width: 768px) {
+    /* navbar */
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .logo a {
+        font-size: 30px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .download-btn:hover {
+        color: var(--text-primary-color) !important;
+    }
+}
+
+/* ==== TABLET RESPONSIVENESS ==== */
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    /* navbar */
+    .nav-menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #mobile-menu {
+        height: 32%;
+    }
+
+    .download-btn:hover {
+        color: var(--text-primary-color) !important;
+    }
 }
