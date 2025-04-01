@@ -290,7 +290,8 @@ header {
 }
 
 /* portfolio section stylings */
-.portfolio-section {
+.portfolio-section,
+.about-section  {
     background: var(--secondary-color);
     color: var(--text-secondary-color);
     margin: 20px;
@@ -401,6 +402,55 @@ header {
     text-transform: uppercase;
     margin-bottom: 0.5rem;
     display: none;
+}
+
+/* about section stylings */
+.about-me {
+    display: flex;
+    gap: 100px;
+    margin: 40px;
+}
+
+.about-me-img {
+    width: auto;
+    height: 350px;
+    transition: transform 0.4s ease-in-out !important;
+    position: relative;
+    border-bottom: 2px solid var(--light-gray);
+    border-right: 3px solid;
+    padding: 10px;
+}
+
+.about-me img:hover {
+    transform: scale(1.05) !important;
+}
+
+.about-me-icon {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.about-contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 22px 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.about-me-contact-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-item p {
+    margin: 0;
+    font-weight: bold;
+    font-style: italic;
 }
 
 /* ==== MOBILE RESPONSIVENESS ==== */
