@@ -298,7 +298,8 @@ header {
     padding: 1px 40px 100px 40px;
 }
 
-.portfolio-section h2 {
+.portfolio-section h2,
+.education-section h2 {
     text-align: right;
 }
 
@@ -322,7 +323,9 @@ header {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15), -5px -5px 15px rgba(255, 255, 255, 0.1);
 }
 
-.project-card:hover {
+.project-card:hover,
+.education:hover,
+.certifications:hover {
     transform: scale(1.03);
 }
 
@@ -451,6 +454,46 @@ header {
     margin: 0;
     font-weight: bold;
     font-style: italic;
+}
+
+/* education section stylings */
+.education-section h2 {
+    font-size: 60px;
+}
+
+.education-certification {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.education,
+.certifications {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.education h3,
+.certifications h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.edu-item {
+    margin-bottom: 20px;
+}
+
+.edu-item p,
+.certifications p {
+    margin: 5px;
+}
+
+.certifications p {
+    margin-bottom: 30px;
 }
 
 /* ==== MOBILE RESPONSIVENESS ==== */
