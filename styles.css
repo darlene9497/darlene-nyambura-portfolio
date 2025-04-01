@@ -499,7 +499,7 @@ header {
 /* ==== MOBILE RESPONSIVENESS ==== */
 @media screen and (max-width: 768px) {
     h1, h2 {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     p {
@@ -593,6 +593,33 @@ header {
     .swipe-hint {
         display: block;
     }
+
+    /* about */
+    .about-me {
+        flex-direction: column;
+        margin: 0 0 50px 0;
+        gap: 0;
+    }
+
+    .about-contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-item {
+        gap: 10px;
+    }
+
+    .about-me-img {
+        height: 300px;
+        object-fit: contain;
+    }
+
+    /* education */
+    .education-certification {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 /* ==== TABLET RESPONSIVENESS ==== */
@@ -658,5 +685,20 @@ header {
 
     .swipe-hint {
         display: block;
+    }
+
+    /* about */
+    .about-me {
+        margin: 0;
+        gap: 40px;
+    }
+
+    .about-contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-item {
+        gap: 10px;
     }
 }
