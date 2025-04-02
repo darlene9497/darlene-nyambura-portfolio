@@ -231,7 +231,7 @@ header {
     flex-direction: column;
     position: absolute;
     right: 25px;
-    top: 50%;
+    top: 40%;
     gap: 15px;
 }
 
