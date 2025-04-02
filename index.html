@@ -241,7 +241,7 @@
                         <br>I am a software developer who loves building sleek, user-friendly websites and bringing creative ideas to life through frontend development. I am passionate about good design and always looking for ways to make digital experiences both beautiful and functional.
                         <br>Right now, I am diving into freelancing, excited to work on projects that challenge me and help me grow. I really believe in continuous learning, whether it is picking up a new framework or finding better ways to approach problem-solving.
                         <br>When I am not coding, you will probably find me watching true crime documentaries, enjoying music, or exploring ways to better my mental well-being. I think it is important to find balance, and I am all about self-improvement, both personally and professionally.
-                        <br>Let us connect and create something great together <img src="/assets/svgs/handshake.svg" alt="handshake emoji" class="about-me-icon">
+                        <br>Let us connect and create something great together.
                     </p>
                     <div class="about-contact-info">
                         <div class="contact-item">
@@ -288,31 +288,45 @@
         <!-- contact section -->
         <section class="contact-section">
             <h2>Get in touch</h2>
-            <div class="contact-text">
-                <p>
-                    I'm always open to connecting with like-minded people, discussing new opportunities,
-                    or simply chatting about all things tech and design. Whether you have a project in 
-                    mind or just want to share ideas, feel free to reach out. I would love to hear from you.
-                </p>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>
+                        I'm always open to connecting with like-minded people, discussing new opportunities,
+                        or simply chatting about all things tech and design. Whether you have a project in 
+                        mind or just want to share ideas, feel free to reach out. I would love to hear from you.
+                    </p>
+                </div>
+                <div class="contact-form">                    
+                    <form class="contact-form" action="https://formspree.io/f/{your-form-id}" method="POST">
+                        <label for="name">Full Name <span>*</span></label>
+                        <div class="input-icon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+
+                        <label for="email">Email <span>*</span></label>
+                        <div class="input-icon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <label for="phone">Phone Number</label>
+                        <div class="input-icon">
+                            <i class="fas fa-phone"></i>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+
+                        <label for="message">Message <span>*</span></label>
+                        <div class="input-icon">
+                            <i class="fas fa-comment-dots"></i>
+                            <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
             </div>
-            <div class="contact-form">
-                <form class="contact-form" action="https://formspree.io/f/{your-form-id}" method="POST">
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-        
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-        
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
-        
-                    <label for="message">Message *</label>
-                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-        
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </section>
+        </section>        
     </main>
     <!-- script JS file for interactivity -->
     <script src="/script.js"></script>
