@@ -437,29 +437,6 @@ header {
     vertical-align: middle;
 }
 
-.about-contact-info {
-    display: flex;
-    justify-content: space-between;
-    margin: 22px 0;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.about-me-contact-icon {
-    width: 24px;
-    height: 24px;
-}
-
-.contact-item p {
-    margin: 0;
-    font-weight: bold;
-    font-style: italic;
-}
-
 /* education section stylings */
 .education-section h2 {
     font-size: 60px;
@@ -513,6 +490,33 @@ header {
 .contact-text {
     flex: 1;
     margin-left: 20px;
+}
+
+.contact-info {
+    margin: 30px 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.contact-item img {
+    filter: invert(1) grayscale(100%) contrast(100%);
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-item p {
+    margin: 0;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--light-gray);
 }
 
 .contact-form {
@@ -696,10 +700,6 @@ form {
         gap: 10px;
     }
 
-    .contact-item {
-        gap: 10px;
-    }
-
     .about-me-img {
         height: 300px;
         object-fit: contain;
@@ -802,10 +802,6 @@ form {
 
     .about-contact-info {
         flex-direction: column;
-        gap: 10px;
-    }
-
-    .contact-item {
         gap: 10px;
     }
 }
