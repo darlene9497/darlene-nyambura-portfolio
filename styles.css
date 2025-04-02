@@ -499,6 +499,7 @@ header {
 .certifications p {
     margin-bottom: 30px;
 }
+
 /* contact section stylings */
 .contact-section {
     margin: 50px;
@@ -712,6 +713,19 @@ form {
 
     .education-section h2 {
         font-size: 40px;
+    }
+
+    /* contact */
+    .contact-section {
+        margin: 20px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-text {
+        margin: 0;
     }
 }
 
