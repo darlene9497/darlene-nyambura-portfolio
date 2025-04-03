@@ -635,6 +635,44 @@ form {
     color: var(--text-secondary-color);
 }
 
+/* footer section stylings */
+.footer-section {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 100px;
+    box-shadow: 0 -4px 6px rgba(238, 233, 233, 0.2);
+}
+
+.footer-link {
+    color: var(--text-primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--light-gray);
+}
+
+.heart {
+    display: inline-block;
+    color: var(--asterisk-color);
+    animation: heartbeat 1.5s infinite;
+}
+
+/* footer heart infinite animation */
+@keyframes heartbeat {
+    0%, 100% { 
+        transform: scale(1); 
+    }
+    25%, 75% { 
+        transform: scale(1.2); 
+    }
+    50% { 
+        transform: scale(1.4); 
+    }
+}
+
 /* ==== MOBILE RESPONSIVENESS ==== */
 @media screen and (max-width: 768px) {
     h1, h2 {
