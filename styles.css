@@ -9,6 +9,13 @@
     --form-background-color: #2a2a2a;
     --form-input-text: #e0e0e0;
 }
+
+/* ensures smooth scrolling */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
 /* general stylings */
 body {
     background: var(--primary-color);
