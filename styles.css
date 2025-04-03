@@ -376,8 +376,9 @@ header {
     margin: 0;
 }
 
-.tech-title {
-    font-size: 40px;
+.tech-title,
+.interests-title {
+    font-size: 35px;
     margin-bottom: 1rem;
 }
 
@@ -409,6 +410,50 @@ header {
     text-transform: uppercase;
     margin-bottom: 0.5rem;
     display: none;
+}
+
+/* interests section stylings */
+.interests-section {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.tag-cloud {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.tag {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.tag:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+    background-color: var(--light-gray);
+    color: var(--text-secondary-color);
+}
+
+.tag i {
+    font-size: 14px;
+    color: var(--secondary-color);
 }
 
 /* about section stylings */
@@ -688,6 +733,13 @@ form {
         display: block;
     }
 
+    /* interests */
+    .tag-cloud {
+        justify-content: flex-start;
+        margin: 0 0 0 10px;
+        gap: 5px;
+    }
+
     /* about */
     .about-me {
         flex-direction: column;
@@ -794,14 +846,19 @@ form {
         display: block;
     }
 
+    /* interests */
+    .tag-cloud {
+        margin: 0 0 0 15px;
+        justify-content: flex-start;
+    }
+
     /* about */
     .about-me {
         margin: 0;
         gap: 40px;
     }
 
-    .about-contact-info {
-        flex-direction: column;
-        gap: 10px;
+    .about-me-img {
+        margin-top: 80px;
     }
 }
