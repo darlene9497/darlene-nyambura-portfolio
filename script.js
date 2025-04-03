@@ -2,3 +2,28 @@
 function openCV() {
     window.open('/assets/files/Darlene Nyambura Nandabi CV 2025.pdf', '_blank');
 }
+
+// function to handle the contact form submission
+function handleFormSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+
+    // submit the form data
+    fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            alert("Message sent successfully 🎉");
+            form.reset(); // clears the form inputs if the submission is successful
+        } else {
+            alert("Oops😭 There was a problem submitting your form. Please email me directly at nyamburanandabi@gmail.com.");
+        }
+        // catch any errors or issues
+    }).catch(() => alert("An error occurred while submitting the form. Please email me directly at nyamburanandabi@gmail.com."));
+    
+    return false;
+}

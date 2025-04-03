@@ -309,11 +309,11 @@
                     </div>
                 </div>
                 <div class="contact-form">                    
-                    <form class="contact-form" action="https://formspree.io/f/{your-form-id}" method="POST">
+                    <form class="contact-form" action="https://formspree.io/f/myzenjjb" method="POST" onsubmit="return handleFormSubmit(event)">
                         <label for="name">Full Name <span>*</span></label>
                         <div class="input-icon">
                             <i class="fas fa-user"></i>
-                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" minlength="8" required>
                         </div>
 
                         <label for="email">Email <span>*</span></label>
