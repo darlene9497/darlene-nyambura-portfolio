@@ -817,6 +817,11 @@ form {
     .contact-text {
         margin: 0;
     }
+
+    /* footer */
+    .footer-text {
+        font-size: 10px;
+    }
 }
 
 /* ==== TABLET RESPONSIVENESS ==== */
