@@ -12,6 +12,7 @@ Welcome to my portfolio. This is a personal website I built to showcase my skill
 - **Education & Certifications**: My formal education and certifications from platforms like Sololearn and IBM.
 - **Contact section**: A form for visitors to reach out to me with inquiries or opportunities.
 - **Social media links**: Links to my LinkedIn, GitHub, email, and WhatsApp profiles for easy contact.
+- **Light/Dark theme toggle**: A feature to switch between light and dark themes for a personalized viewing experience. The theme is saved and persists across sessions.
 
 ## Technologies used
 

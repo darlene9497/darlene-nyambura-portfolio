@@ -12,6 +12,7 @@
     --form-input-text: #e0e0e0;
 }
 
+/* light theme root variables */
 [data-theme="light"] {
     --primary-color: #f3f0f0;
     --secondary-color: #212020;
