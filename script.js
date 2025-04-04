@@ -1,3 +1,28 @@
+// theme toggle button
+const themeToggle = document.getElementById("theme-toggle");
+
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme) {
+    document.documentElement.setAttribute("data-theme", currentTheme);
+    // change the icon of the theme toggle based on the saved theme
+    themeToggle.textContent = currentTheme === "light" ? "🌞" : "🌙";
+}
+// event listener to toggle theme when button is clicked
+themeToggle.addEventListener("click", () => {
+    const newTheme = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", newTheme);
+    // update button icon
+    themeToggle.textContent = newTheme === "light" ? "🌙" : "🌞";
+    localStorage.setItem("theme", newTheme);
+});
+// if no theme is saved in the localStorage, check the system's color scheme preference
+if (!currentTheme) {
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const defaultTheme = prefersDark ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", defaultTheme);
+    localStorage.setItem("theme", defaultTheme);
+}
+
 // scroll to the top of the page when the logo is clicked
 document.getElementById('logo').addEventListener('click', function(e) {
     e.preventDefault();
