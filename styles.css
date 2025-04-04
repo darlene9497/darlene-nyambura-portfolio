@@ -27,8 +27,7 @@
         filter: invert(0) grayscale(100%) contrast(100%);
     }
 
-    .about-me-icon,
-    .tag i {
+    .about-me-icon {
         filter: invert(1) grayscale(100%) contrast(100%);
     }
 }
@@ -500,6 +499,10 @@ header {
 .tag i {
     font-size: 14px;
     color: var(--secondary-color);
+}
+
+.tag:hover i {
+    color: var(--text-secondary-color);
 }
 
 /* about section stylings */
