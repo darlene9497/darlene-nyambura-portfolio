@@ -16,25 +16,27 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#" id="logo">Darlene Nyambura &lt;/&gt;</a>
-            </div>            
-            <!-- desktop navigation -->
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Portfolio</a></li>
-                <li class="nav-item">
-                    <button class="download-btn" onclick="openCV()">Download CV</button>
-                </li>
-            </ul>
-            <!-- hamburger menu button for mobile -->
-            <a href="#mobile-menu" class="menu-icon"><i class="fa-solid fa-bars"></i></a>
-            
-            <!-- theme toggle button -->
-            <button id="theme-toggle" aria-label="toggle light/dark mode">🌙</button>
-        </nav>        
+        <div class="header-container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#" id="logo">Darlene Nyambura &lt;/&gt;</a>
+                </div>            
+                <!-- desktop navigation -->
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item">
+                        <button class="download-btn" onclick="openCV()">Download CV</button>
+                    </li>
+                </ul>
+                <!-- hamburger menu button for mobile -->
+                <a href="#mobile-menu" class="menu-icon"><i class="fa-solid fa-bars"></i></a>
+                
+                <!-- theme toggle button -->
+                <button id="theme-toggle" aria-label="toggle light/dark mode">🌙</button>
+            </nav>
+        </div>       
         <!-- mobile menu which is hidden by default -->
         <div id="mobile-menu">
             <a href="#index.html" class="close-btn"><i class="fa-solid fa-xmark"></i></a>

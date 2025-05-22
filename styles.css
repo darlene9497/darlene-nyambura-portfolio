@@ -43,6 +43,7 @@ body {
     background: var(--primary-color);
     color: var(--text-primary-color);
     margin: 0;
+    padding: 0;
     font-family: "Montserrat", sans-serif;
     user-select: none;
 }
@@ -69,12 +70,16 @@ header {
     padding: 15px 0;
 }
 
+.header-container {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: 0 30px;
 }
 
 .logo a {
@@ -207,6 +212,8 @@ header {
 /* hero section stylings */
 .hero-section {
     position: relative;
+    max-width: 1290px;
+    margin: 0 auto;
 }
 
 .hero-content {
@@ -343,7 +350,8 @@ header {
 .about-section  {
     background: var(--secondary-color);
     color: var(--text-secondary-color);
-    margin: 20px;
+    max-width: 1290px;
+    margin: 0 auto;
     padding: 1px 40px 100px 40px;
 }
 
@@ -418,7 +426,8 @@ header {
 /* tech stack stylings */
 .tech-stack-section {
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1290px;
 }
 
 .tech-title,
@@ -574,7 +583,9 @@ header {
 
 /* contact section stylings */
 .contact-section {
-    margin: 50px;
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
 .contact-content {
@@ -689,7 +700,8 @@ form {
 .footer-section {
     text-align: center;
     padding: 10px 0;
-    margin-top: 100px;
+    max-width: 1290px;
+    margin: 100px auto 0;
     box-shadow: 0 -4px 6px var(--light-box-shadow);
 }
 
